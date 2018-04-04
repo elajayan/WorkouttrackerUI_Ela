@@ -9,7 +9,8 @@ import 'rxjs/add/operator/do';
  
  @Injectable()
  export class workoutcollectionService {  
-  baseUrl : string ="http://localhost:8003/";
+  // baseUrl : string ="http://localhost:8003/";
+  baseUrl :string="http://localhost/WorkouttrackerService/";
     constructor(private _http: Http){}
     getAll():Observable<WorkOut[]> { 
         return this._http.get(this.baseUrl + "api/workout")

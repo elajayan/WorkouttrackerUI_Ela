@@ -12,7 +12,8 @@ import { calroieSummary, chart } from '../model/calroieSummary';
  
 @Injectable()
 export class workoutactiveService {  
-  baseUrl : string ="http://localhost:8003/";
+  // baseUrl : string ="http://localhost:8003/";
+  baseUrl :string="http://localhost/WorkouttrackerService/";
 
    constructor(private _http: Http){}
    
